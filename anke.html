@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-pop Anketa</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #b74b4b;
+    }
+
+    form {
+      background-color: #ffe4e1;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(183, 75, 75, 0.3);
+    }
+
+    textarea {
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      margin-right: 1rem;
+      background-color: #b74b4b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #a63a3a;
+    }
+
+    label {
+      display: block;
+      margin-top: 1.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ispuni kratku K-pop anketu</h1>
+
+  <form>
+    <label for="grupa">Omiljena K-pop grupa:</label>
+    <select id="grupa" name="grupa">
+      <optgroup label="JYP Entertainment">
+        <option value="straykids">Stray Kids</option>
+        <option value="itzy">ITZY</option>
+        <option value="twice">TWICE</option>
+      </optgroup>
+      <optgroup label="HYBE">
+        <option value="bts">BTS</option>
+        <option value="enhypen">ENHYPEN</option>
+        <option value="txt">TXT</option>
+      </optgroup>
+      <optgroup label="SM Entertainment">
+        <option value="aespa">aespa</option>
+        <option value="redvelvet">Red Velvet</option>
+      </optgroup>
+      <optgroup label="KQ Entertainment">
+        <option value="ateez">ATEEZ</option>
+      </optgroup>
+      <optgroup label="STARSHIP Entertainment">
+        <option value="ive">IVE</option>
+      </optgroup>
+      <optgroup label="YG Entertainment">
+        <option value="blackpink">Blackpink</option>
+      </optgroup>
+    </select>
+
+    <label for="clan">Omiljeni član (izaberi ime):</label>
+    <input list="clanovi" id="clan" name="clan">
+    <datalist id="clanovi">
+      <option value="Bang Chan">
+      <option value="I.N">
+      <option value="Felix">
+      <option value="Hyunjin">
+      <option value="Changbin">
+      <option value="Seungmin">
+      <option value="Lee Know">
+      <option value="Han">
+      <option value="Yuna">
+      <option value="Chaeryeong">
+      <option value="Lia">
+      <option value="Ryujin">
+      <option value="Yeji">
+      <option value="Sana">
+      <option value="Nayeon">
+      <option value="Momo">
+      <option value="Jihyo">
+      <option value="Chaeyoung">
+      <option value="Jeongyeon">
+      <option value="Dahyun">
+      <option value="Mina">
+      <option value="Tzuyu">
+      <option value="Jungkook">
+      <option value="V">
+      <option value="Jimin">
+      <option value="J-hope">
+      <option value="Jin">
+      <option value="Jungwon">
+      <option value="Heesung">
+      <option value="Sunghoon">
+      <option value="Jake">
+      <option value="Jay">
+      <option value="Niki">
+      <option value="Sunoo">
+      <option value="Suga">
+      <option value="Huening Kai">
+      <option value="Beomgyu">
+      <option value="Taehyun">
+      <option value="Soobin">
+      <option value="Yeonjun">
+      <option value="Karina">
+      <option value="Giselle">
+      <option value="Ningning">
+      <option value="Winter">
+      <option value="Irene">
+      <option value="Yeri">
+      <option value="Seulgi">
+      <option value="Wendy">
+      <option value="Joy">
+      <option value="Seonghwa">
+      <option value="Wooyoung">
+      <option value="San">
+      <option value="Yeosang">
+      <option value="Hongjoong">
+      <option value="Jongho">
+      <option value="Mingi">
+      <option value="Yunho">
+      <option value="Wonyoung">
+      <option value="Rei">
+      <option value="Leeseo">
+      <option value="Yujin">
+      <option value="Gaeul">
+      <option value="Liz">
+      <option value="Rose">
+      <option value="Jisoo">
+      <option value="Jennie">
+      <option value="Lisa">
+    </datalist>
+
+    <label for="napomena">Poruka ili komentar:</label>
+    <textarea name="napomena" rows="6" cols="40" placeholder="Napiši nešto o tvojoj omiljenoj grupi ili članu OR what I should write next..."></textarea>
+
+    <br><br>
+    <input type="submit" value="Pošalji odgovor!">
+    <input type="reset" value="Poništi unos!">
+  </form>
+
+</body>
+</html>
